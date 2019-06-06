@@ -210,6 +210,7 @@ endif
 ifeq ($(OS), linux)
   SOFLAGS = -shared -static-libgcc -Wl,-soname,$(@F) -Wl,-O1
   CFLAGS += -pthread
+  CONFIGURE_BUILD = mips64el-koji-linux-gnu
 endif
 
 ifeq ($(OS), solaris)
